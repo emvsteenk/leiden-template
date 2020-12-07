@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa,autocite=inline]{biblatex}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{references.bib}
+\usepackage{tipa}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+% for repeating footnote numbers
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+% for notes / remarks
+\newcommand{\TODO}{\begin{color}{red}{\texttt{TODO}}\end{color}\xspace}
+\newcommand{\todo}[1]{\begin{color}{red}{#1}\end{color}}
+\newcommand{\emma}[1]{\begin{color}{cyan}\textsc{emma: }{#1}\end{color}}
+
+
+% title page
+\title{Title}
+\author{Emma van Steenkiste \\ s1339966}
+
+
+
+\begin{document}
+\input{title.tex}
+
+
+
+\section{Introduction}
+
+\section{Method}
+
+\section{Results}
+
+\section{Discussion}
+
+
+
+
+
+
+
+
+\newpage
+\nocite{VanDale}
+\printbibliography
+
+
+\end{document}
