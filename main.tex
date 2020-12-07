@@ -19,21 +19,28 @@
 % for notes / remarks
 \newcommand{\TODO}{\begin{color}{red}{\texttt{TODO}}\end{color}\xspace}
 \newcommand{\todo}[1]{\begin{color}{red}{#1}\end{color}}
-\newcommand{\emma}[1]{\begin{color}{cyan}\textsc{emma: }{#1}\end{color}}
 
+% insert your name for making comments that start with "yourname: "
+\newcommand{\emma}[1]{\begin{color}{cyan}\textsc{emma: }{#1}\end{color}}
 
 % title page
 \title{Title}
-\author{Emma van Steenkiste \\ s1339966}
+\author{Student Name \\ Student number}
 
 
 
 \begin{document}
 \input{title.tex}
 
+\tableofcontents
+
+\newpage
+
 
 
 \section{Introduction}
+
+Text goes here.
 
 \section{Method}
 
@@ -52,5 +59,12 @@
 \nocite{VanDale}
 \printbibliography
 
+% \listoftables
+% \addcontentsline{toc}{chapter}{List of Tables}
+
+% \listoffigures
+% \addcontentsline{toc}{chapter}{List of Figures}
+
+\appendix
 
 \end{document}
